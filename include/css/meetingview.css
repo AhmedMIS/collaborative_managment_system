@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+div#meeting_detail
+{
+	margin-left:20px; margin-top:20px;
+}
+#meeting_detail td
+{
+	padding:10px; border-bottom: 1px solid #cbcbcb; border-right: 1px solid #cbcbcb;
+}
+#date
+{
+	padding:1px;
+}
+#save
+{
+	padding:5px;
+}

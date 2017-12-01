@@ -1,0 +1,32 @@
+#login-pic
+{
+	padding-left:75px; padding-top:35px;
+}
+#login-form
+{
+	width:200px;  padding-top:50px ; padding-right:235px; float:right;
+}
+#field1
+{
+	
+}
+#field1 input 
+{ 
+    width:200px; 
+}
+#field2
+{
+	padding-top:10px;
+}
+#field2 input
+{
+	width:200px;
+}
+#login-button
+{
+	padding-top:20px;
+}
+.color
+{
+color:#F13131;
+}

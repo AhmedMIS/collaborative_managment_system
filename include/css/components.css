@@ -1,0 +1,12 @@
+/* progress bar */
+div.progressbar-holder{display:block;width:100%; height:100%; }
+div.progressbar-holder div.progressbar{display:inline-block; border:1px solid #000; width:100%; height:15px; border-radius:15px; margin-top:5px; text-align:center; position:relative;}
+div.progressbar-holder div.progressbar label{font-size:10px;color:#000; position:absolute;top:-10px; left:50%;}
+div.progressbar-holder div.progressbar div.value{float:left; display:inline-block; height:15px; border-radius:15px;-webkit-transition: all 1.5s ease; -moz-transition: all 1.5s ease; -o-transition: all 1.5s ease; transition: all 1.5s ease;}
+div.progressbar-holder div.progressbar div.excelent{background-color:#96D940;}
+div.progressbar-holder div.progressbar div.good{background-color:#0BC1FE;}
+div.progressbar-holder div.progressbar div.fine{background-color:#FF860C;}
+div.progressbar-holder div.progressbar div.bad{background-color:#FF1600;}
+
+/*  Dropable  */
+div#dropable{display: block;width: 890px;height: 117%;position: absolute;top: -20px;left: -89px;z-index: -1;background-color: aqua; -webkit-transition: all 1.5s ease; -moz-transition: all 1.5s ease; -o-transition: all 1.5s ease; transition: all 1.5s ease;}

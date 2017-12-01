@@ -1,0 +1,62 @@
+
+div#user_details
+{ 
+    font: 75% "Trebuchet MS", sans-serif;
+}
+div#search_form
+{ 
+    margin-left:20%; margin-bottom:30px;
+}
+div._row
+{
+	display:block; width:100%; margin-bottom:20px; 
+	height:40px; line-height:40px;
+}
+div._cell
+{
+	display:inline-block; float:left; width:48%;
+}
+div._cell div._title, div._cell div._value
+{
+	display:inline-block;width:30%; 
+}
+div._cell div._title
+{
+	width:30%; 
+}
+div._cell div._value
+{
+	width:60%; 
+}
+	div#profile_info
+{ 
+    margin-left:165px;margin-top:20px;
+}
+div#date
+{
+	margin-left:30px;
+}
+div#current
+{
+	margin-left:30px;
+}
+div#detail
+{
+	margin-left:30px;
+}
+div#print
+{
+	margin-left:700px;
+}
+div#date1
+{
+	margin-left:80px;
+}
+div#present
+{
+	margin-left:80px;
+}
+div#absant
+{
+	margin-left:80px;
+}

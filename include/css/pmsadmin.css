@@ -1,0 +1,18 @@
+#navigation { float:left; }
+#navigation ul { margin-top:20px; }
+#navigation ul li {	display:inline;	color:#FFF;	margin-left:5px;font-family:Verdana, Geneva, sans-serif;font-size:15px;}
+#navigation ul li a {text-decoration:none; color:#FFF; padding:21px 10px;}
+#navigation ul li a:hover { background-color:rgba(2,15,2,0.2); height:46px; }
+#icons1{	margin-top:20px;}
+#icons2{	padding-top:20px;}
+
+div#filter{border: 1px solid blue;
+display: block;
+width: 89%;
+height: 46px;
+padding-left: 30px;
+padding-top: 15px;
+margin-left: 30px;}
+
+span#filter_cntr_btn{display:block;width:20px;height:20px; background-image:url(../images/up_down_arrows_white.png);margin-left:15px;}
+span#filter_cntr_btn:hover{background-image:url(../images/up_down_arrows_hover.png);}

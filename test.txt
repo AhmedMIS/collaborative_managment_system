@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>View Meetings</title>
+<link rel="stylesheet" type="text/css" href="../include/css/global.css"/>
+<link rel="stylesheet" type="text/css" href="../include/css/pmsadmin.css"/>
+<link rel="stylesheet" type="text/css" href="../admin/css/theme/jquery-ui-1.10.4.custom.css"/>
+<link rel="stylesheet" type="text/css" href="../include/css/meetingview.css" />
+</head>
+<body>
+<div id="wraper">
+	<?php include 'header.php'; include 'functions.php';
+	$query = mysql_query("SELECT teamid FROM teammembers WHERE userid=".$_GET['userid']);
+	$count = @mysql_num_rows($query);
+	if ($count > 0) {
+		$i = 0;
+		while ($row = mysql_fetch_array($query)) {
+			$teamid[$i] = $row['teamid'];
+				$query1	= mysql_query("SELECT pmid FROM teams WHERE id='$teamid[$i]'");
+				$row1 = mysql_fetch_array($query1);
+				$pmid[$i] = $row1['pmid'];
+					$query2	= mysql_query("SELECT title FROM projects WHERE assigneeid='$pmid[$i]'");
+					$row2 = mysql_fetch_array($query2);
+					$project_title_temp[$i] = $row2['title'];
+			$i = $i + 1;
+		}
+	}
+	
+	 ?>
+	<fieldset style="width:780px; margin-left:40px; margin-top:30px;">
+     <legend style="color:#06F;"><b>User Report</b></legend>
+<table width="100%" border="1">
+  <tr>
+    <td>Project</td>
+    <td>Project Manager</td>
+    <td>Task</td>
+    <td>Team Members</td>
+    <td>Starting Date</td>
+    <td>Status</td>
+  </tr>
+  <?php for ($i = 0; $i < count($pmid); $i++) {?>
+  <tr>
+    <td><?php echo $project_title[$i] ?></td>
+    <td><?php $row = get_user_name($pmid[$i]); echo $row['fname'].' '.$row['lname'] ?></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <?php } ?>
+</table>
+
+
+     
+     </fieldset>
+	 <?php include("footer.php"); ?>
+</div>	 
